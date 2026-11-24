@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # 6. Commande de démarrage de l'API
-CMD ["uvicorn", "5_api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "5_api:app", "--host", "0.0.0.0", "--port", "8080"]
