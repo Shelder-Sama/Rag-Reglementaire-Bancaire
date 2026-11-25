@@ -42,4 +42,4 @@ jobs:
         service: api-rag-bce
         image: europe-west1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/mon-repo-rag/api-rag:latest
         region: europe-west1
-        flags: '--allow-unauthenticated'
+        flags: '--allow-unauthenticated --memory=2Gi --cpu=2 --timeout=600'
